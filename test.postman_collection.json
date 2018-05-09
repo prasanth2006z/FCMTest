@@ -1,0 +1,187 @@
+{
+	"variables": [],
+	"info": {
+		"name": "A",
+		"_postman_id": "0cfd1270-020c-2f23-f81f-766b65bdddc1",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register New User",
+			"request": {
+				"url": "http://localhost:8080/register/user",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "userName",
+						"value": "test",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "test",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "ce506f78-a5f9-4e50-ac67-809cbf754d92",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"userName\":\"test\",\n\"password\": \"test\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Login user",
+			"request": {
+				"url": "http://localhost:8080/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "userName",
+						"value": "test",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "test",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "ce506f78-a5f9-4e50-ac67-809cbf754d92",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"userName\":\"test\",\n\"password\": \"test\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Register Device",
+			"request": {
+				"url": "http://localhost:8080/register/device",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "2b0a284f-1227-42fe-ad52-cd67b33fbd0f",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"token\":\"test\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Push Notifications",
+			"request": {
+				"url": "http://localhost:8080/push",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "5a7d59e6-9fee-41cc-8002-f60572b822b7",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"name\":\"Lead\",\n\"type\": \"buy\",\n\"stopLoss\":\"210\",\n\"bet\":\"betFrom-betTO\",\n\"tgt\":\"tgtFrom-tgtTo\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Log out",
+			"request": {
+				"url": "http://localhost:8080/logout",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "5a7d59e6-9fee-41cc-8002-f60572b822b7",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
